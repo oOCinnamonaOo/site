@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site</title>
+    
+    <style type="text/css">
+    /* CSS */
+		header{
+			height: 200px;
+			background-color: rgb(39, 39, 39);
+		}
+
+    a {
+      text-decoration:none;
+    }
+
+    .ex1{
+			font-size: 50px;
+			color: rgb(255, 221, 0);
+			text-align: center;
+      margin-bottom: 5px;
+		}
+
+    .menu{
+        height: 800px;
+        width: 20%;
+        float: left;
+    }
+
+    .countent{
+      font: 1.5em sans-serif;
+        height: 800px;
+        background-color: rgb(14, 14, 14);
+        width: 80%;
+        float: left;
+        text-align: center;
+    }
+
+    footer{
+        height: 150px;
+        background-color: rgb(29, 29, 29);
+        clear: both;
+    }
+
+    .button-86 {
+      all: unset;
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+      background: transparent;
+      border: none;
+      position: relative;
+      color: #ffc400;
+      cursor: pointer;
+      z-index: 1;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin-left: 50px ;
+      margin-bottom: 15px;
+    }
+
+    .button-86::after,
+    .button-86::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -99999;
+      transition: all .4s;
+    }
+
+    .button-86::before {
+      transform: translate(0%, 0%);
+      width: 100%;
+      height: 100%;
+      background: #28282d;
+      border-radius: 10px;
+    }
+
+    .button-86::after {
+      transform: translate(10px, 10px);
+      width: 35px;
+      height: 35px;
+      background: #ffae0053;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 50px;
+    }
+
+    .button-86:hover::before {
+      transform: translate(5%, 20%);
+      width: 110%;
+      height: 110%;
+    }
+
+    .button-86:hover::after {
+      border-radius: 10px;
+      transform: translate(0, 0);
+      width: 100%;
+      height: 100%;
+    }
+
+    .button-86:active::after {
+      transition: 0s;
+      transform: translate(0, 5%);
+    }  
+	</style>
+
+</head>
+<body>
+  <!-- HTML !-->
+    <header> 
+      <p class="ex1">Випускна робота Валерії</p> 
+    </header>
+    <div class="menu">
+        <p class="ex2">мої роботи</p>
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+        <a href="lists.html" target="_blank"><button class="button-86" role="button">work 1</button></a> 
+    </div>
+    <div class="countent">Info</div>
+    <footer>
+      <p class="ex1">Мої контакти</p>
+      <div class="ex1"><a href="tel:+380678739190">+380678739190</a></div>
+    </footer>
+</body>
+</html>
